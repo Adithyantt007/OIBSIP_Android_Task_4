@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F7"> <View
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/gradient_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#ABE6F8"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="121dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="55dp"
+                android:paddingBottom="0dp"
+                android:src="@drawable/logo_quiz_1024x682_jpg" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Quiz"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="Test your knowledge now!"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="START QUIZ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="16dp"
+            app:icon="@android:drawable/ic_media_play"
+            android:backgroundTint="#2196F3"
+            app:elevation="4dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="EXIT GAME"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            android:textColor="#D63031"
+            app:strokeColor="#D63031"/>
+
+    </LinearLayout>
+</RelativeLayout>
